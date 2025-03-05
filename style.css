@@ -126,6 +126,50 @@ body {
   justify-content: center;
 }
 
+.desktop-share-items {
+  background-color: #48556a;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  gap: 40px;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  right: -11%;
+  top: 50%;
+}
+
+.desktop-share-items ul {
+  display: flex;
+  gap: 20px;
+}
+
+.desktop-share-items ul li {
+  list-style-type: none;
+}
+
+@media (min-width: 700px) {
+  .container {
+    flex-direction: row;
+    max-width: 712px;
+  }
+  .image {
+    width: 1000px;
+    height: 247px;
+  }
+  .image img {
+    border-radius: 5px 0 0 5px;
+  }
+  .content {
+    border-radius: 0 5px 5px 0;
+  }
+  .desktop-share-items {
+    display: block;
+    display: flex;
+  }
+}
+
 /* display none */
 .none {
   display: none;
